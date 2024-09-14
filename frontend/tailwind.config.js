@@ -10,13 +10,19 @@ export default {
 			xl: "1200px", // => @media (min-width: 1200px)
 			"2xl": "1400px", // => @media (min-width: 1400px)
 		},
-		// fontFamily: {
-		// 	sans: ["Graphik", "sans-serif"],
-		// 	serif: ["Merriweather", "serif"],
-		// },
-		// colors: {
-
-		// },
+		fontFamily: {
+			Roboto: ["Roboto", "system-ui"],
+		},
+		colors: {
+			white: "#fff",
+			light: "rgb(240, 241, 243)",
+			grey: "rgb(80, 80, 80)",
+			cyan: "rgb(30, 189, 184)",
+			gold: "rgb(219, 177, 59)",
+			darkblue: "rgb(45, 50, 90)",
+			// Use this color for inactive links
+			disable: "rgba(255, 255, 255, 0.5)",
+		},
 		extend: {},
 	},
 	plugins: [],

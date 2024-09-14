@@ -1,7 +1,10 @@
+// Import page files here
+import Root from "../pages/Root";
+
 const routes = [
 	{
 		path: "/",
-		element: <div>this is root</div>,
+		element: <Root />,
 	},
 ];
 

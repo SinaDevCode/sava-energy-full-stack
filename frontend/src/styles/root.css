@@ -1,0 +1,28 @@
+.Navbar::before {
+    content: "";
+    position: absolute;
+    left: -1.95rem;
+    height: 100%;
+    width: 2rem;
+    background-color: rgb(45, 50, 90);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+.Navbar ul a {
+   padding: 1rem 1.25rem;
+   font-size: 14px;
+   font-weight: 500;
+}
+
+.Navbar a.active {
+    color: rgb(219, 177, 59);
+}
+
+/* Remove these lines when all the menuLinks become active */
+.Navbar a:nth-child(2),
+.Navbar a:nth-child(6),
+.Navbar a:nth-child(7){
+    /* Disable Code Color => rgba(255, 255, 255, 0.5) */
+    color: rgba(255, 255, 255, 0.5) !important;
+    pointer-events: none;
+}

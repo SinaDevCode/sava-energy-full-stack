@@ -6,29 +6,35 @@
     @font-face {
         font-family: "Roboto";
         font-style: normal;
-        src: url('../../public/fonts/Roboto-Light.ttf');
+        src: url('fonts/Roboto-Light.ttf');
         font-weight: 300;
     }
     @font-face {
         font-family: "Roboto";
         font-style: normal;
-        src: url('../../public/fonts/Roboto-Regular.ttf');
+        src: url('fonts/Roboto-Regular.ttf');
         font-weight: 400;
     }
     @font-face {
         font-family: "Roboto";
         font-style: normal;
-        src: url('../../public/fonts/Roboto-Medium.ttf');
+        src: url('fonts/Roboto-Medium.ttf');
         font-weight: 500;
     }
     @font-face {
         font-family: "Roboto";
         font-style: normal;
-        src: url('../../public/fonts/Roboto-Bold.ttf');
+        src: url('fonts/Roboto-Bold.ttf');
         font-weight: 700;
     }
 
     html {
         font-family: 'Roboto';
+        
+        /* disable user selecting */
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 }
