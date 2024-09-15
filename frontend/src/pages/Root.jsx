@@ -28,6 +28,7 @@ const menuLink = menuLinks.titles.map((title, index) => (
 	<NavLink
 		to={menuLinks.paths[index]}
 		key={title}
+		className="xs:hidden md:flex"
 	>
 		{title}
 	</NavLink>
@@ -44,19 +45,19 @@ const Root = () => {
 				<source src="videos/logoMotion/sava-energy-logo-motion-500x200.webm" />
 				Your browser doesn't support video
 			</video>
-			<div className="h-full w-3/4 flex flex-col justify-between items-end gap-2">
+			<div className="h-full flex flex-col justify-between items-end gap-2">
 				<Link
 					to="/Login"
 					className="w-32 m-2 py-2 text-white text-sm font-bold text-center rounded-lg transition bg-gold hover:bg-cyan"
 				>
 					Login
 				</Link>
-				<div className="Navbar flex justify-between items-center relative pl-4 pr-8 bg-darkblue min-w-[54rem]">
+				<div className="Navbar max-h-[52px] flex justify-between items-center relative pl-2 lg:pl-4 pr-4 lg:pr-8 bg-darkblue xs:min-w-[16rem] md:min-w-[44rem] lg:min-w-[54rem]">
 					<ul className="flex">{menuLink}</ul>
 					<FaBars
 						size="18px"
 						color="#fff"
-						className="cursor-pointer"
+						className="MenuButton cursor-pointer flex md:hidden m-4"
 					/>
 				</div>
 			</div>

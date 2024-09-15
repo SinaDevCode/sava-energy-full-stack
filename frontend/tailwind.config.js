@@ -6,7 +6,7 @@ export default {
 			xs: "325px", // => @media (min-width: 325px)
 			sm: "576px", // => @media (min-width: 576px)
 			md: "768px", // => @media (min-width: 768px)
-			lg: "992px", // => @media (min-width: 992px)
+			lg: "1056px", // => @media (min-width: 1056px)
 			xl: "1200px", // => @media (min-width: 1200px)
 			"2xl": "1400px", // => @media (min-width: 1400px)
 		},

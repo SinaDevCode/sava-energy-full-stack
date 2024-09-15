@@ -12,6 +12,12 @@
    padding: 1rem 1.25rem;
    font-size: 14px;
    font-weight: 500;
+   color: #fff;
+   transition: color 0.3s ease;
+}
+
+.Navbar ul a:hover {
+    color: rgb(219, 177, 59);
 }
 
 .Navbar a.active {
@@ -25,4 +31,20 @@
     /* Disable Code Color => rgba(255, 255, 255, 0.5) */
     color: rgba(255, 255, 255, 0.5) !important;
     pointer-events: none;
+}
+
+@media screen and (max-width: 900px){
+    .Navbar ul a {
+        display: none;
+    }
+
+    .Navbar .MenuButton {
+        display: flex;
+    }   
+}
+
+@media screen and (767px < width < 900px) {
+    .Navbar {
+        min-width: 32rem;
+    }
 }
