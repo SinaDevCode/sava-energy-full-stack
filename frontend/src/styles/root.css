@@ -26,14 +26,13 @@
 
 /* Remove these lines when all the menuLinks become active */
 .Navbar a:nth-child(2),
-.Navbar a:nth-child(6),
-.Navbar a:nth-child(7){
+.Navbar a:nth-child(6) {
     /* Disable Code Color => rgba(255, 255, 255, 0.5) */
     color: rgba(255, 255, 255, 0.5) !important;
     pointer-events: none;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 900px) {
     .Navbar ul a {
         display: none;
     }
