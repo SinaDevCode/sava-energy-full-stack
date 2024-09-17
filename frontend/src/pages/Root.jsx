@@ -35,7 +35,7 @@ const menuLink = menuLinks.titles.map((title, index) => (
 const Root = () => {
 	return (
 		<>
-			<div className="sticky top-0 left-0 w-full max-h-28 flex justify-between items-center z-10 bg-light">
+			<div className="sticky top-0 left-0 w-full max-h-28 flex justify-between items-center z-50 bg-light">
 				<video
 					className="w-44"
 					muted

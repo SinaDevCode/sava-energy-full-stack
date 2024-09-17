@@ -16,8 +16,12 @@ const Map = () => {
 	return (
 		<div className="flex h-96 w-full">
 			<MapContainer
-				className="h-full w-full"
+				className="h-full w-full z-0"
 				center={coordinate}
+				doubleClickZoom={false}
+				scrollWheelZoom={false}
+				touchZoom={false}
+				dragging={false}
 				zoom={13}
 			>
 				attribution: '
