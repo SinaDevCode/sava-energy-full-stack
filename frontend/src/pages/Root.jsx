@@ -64,6 +64,9 @@ const Root = () => {
 			<div id="content">
 				<Outlet />
 			</div>
+			<div className="flex items-center justify-center bg-darkblue border-t-[3px] border-gold">
+				<p className="py-4 text-white text-sm font-medium">Copyright &copy; SAVA Energy 2023</p>
+			</div>
 		</>
 	);
 };
