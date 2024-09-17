@@ -9,6 +9,17 @@ import { BsMailbox2Flag } from "react-icons/bs";
 const ContactUs = () => {
 	return (
 		<>
+			<div className="relative flex items-center w-[576px]">
+				<p className="text-xl text-white font-semibold absolute top-1/2 left-5 -translate-y-1/2">
+					Contact Us
+				</p>
+				<img
+					className="w-full"
+					src="images/webp/title.webp"
+					loading="eager"
+					alt=""
+				/>
+			</div>
 			<div className="flex flex-col p-20 gap-5 text-grey">
 				<p>
 					<span className="font-semibold">SAVA ENERGY&nbsp;</span>
