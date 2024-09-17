@@ -6,7 +6,6 @@ import "../styles/root.css";
 const menuLinks = {
 	titles: [
 		"Home",
-		"About",
 		"Services",
 		"Products",
 		"Lab Equipments",
@@ -15,7 +14,6 @@ const menuLinks = {
 	],
 	paths: [
 		"/",
-		"/About",
 		"/Services",
 		"/Products",
 		"/LabEquipments",
