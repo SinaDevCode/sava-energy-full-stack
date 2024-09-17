@@ -51,7 +51,7 @@ const Root = () => {
 					>
 						Login
 					</Link>
-					<div className="Navbar max-h-[52px] flex justify-between items-center relative pl-2 lg:pl-4 pr-4 lg:pr-8 bg-darkblue xs:min-w-[16rem] md:min-w-[44rem] lg:min-w-[54rem]">
+					<div className="Navbar max-h-[52px] flex justify-between items-center relative pl-2 lg:pl-4 pr-4 lg:pr-8 bg-darkblue min-w-[8rem] xs:min-w-[11rem] md:min-w-[44rem] lg:min-w-[54rem]">
 						<ul className="flex">{menuLink}</ul>
 						<FaBars
 							size="18px"
