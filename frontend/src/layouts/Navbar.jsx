@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import menuLinks from "../database/jsons/menuLinks.json";
+import menuLinks from "../database/jsons/menu-links.json";
 import "../styles/navbar.css";
 
 const menuLink = menuLinks.titles.map((title, index) => (

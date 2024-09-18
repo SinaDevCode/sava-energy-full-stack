@@ -1,0 +1,77 @@
+[
+	{
+		"id": 1,
+		"name": "VG Meter-FANN 35",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-1.webp"
+	},
+	{
+		"id": 2,
+		"name": "VG Meter-OFITE",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-2.webp"
+	},
+	{
+		"id": 3,
+		"name": "API Filter Press-FANN/OFITE",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-3.webp"
+	},
+	{
+		"id": 4,
+		"name": "Hamilton Mixer",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-4.webp"
+	},
+	{
+		"id": 5,
+		"name": "Retort Kit-FANN/OFITE",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-5.webp"
+	},
+	{
+		"id": 6,
+		"name": "HT-HP Filter Press",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-6.webp"
+	},
+	{
+		"id": 7,
+		"name": "Mud Balance-FANN",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-7.webp"
+	},
+	{
+		"id": 8,
+		"name": "Mud Balance-OFITE",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-8.webp"
+	},
+	{
+		"id": 9,
+		"name": "Marsh funnel & Cup-FANN/OFITE",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-9.webp"
+	},
+	{
+		"id": 10,
+		"name": "Thermo Cup-FANN",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-10.webp"
+	},
+	{
+		"id": 11,
+		"name": "Thermo Cup-OFITE",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-11.webp"
+	},
+	{
+		"id": 12,
+		"name": "Filter Paper-OFITE",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-12.webp"
+	},
+	{
+		"id": 13,
+		"name": "Filter Paper-FANN",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-13.webp"
+	},
+	{
+		"id": 14,
+		"name": "Mud Lab Accessories",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-14.webp"
+	},
+	{
+		"id": 15,
+		"name": "Spare Parts",
+		"imgUrl": "/images/labEquipments/Sava-Site-Pic-15.webp"
+	}
+]
