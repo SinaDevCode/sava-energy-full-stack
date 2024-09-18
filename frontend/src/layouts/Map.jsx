@@ -1,5 +1,6 @@
 import React from "react";
 import { MapContainer, Marker, TileLayer, Popup } from "react-leaflet";
+import { Icon } from "leaflet";
 import "leaflet/dist/leaflet.css";
 
 const coordinate = [34.997351457449504, 50.46462276362377];
@@ -12,6 +13,11 @@ const Map = () => {
 			popUp: "Sava Energy Factory",
 		},
 	];
+
+	const customIcon = new Icon({
+		iconUrl: "images/map/marker-icon.png",
+		iconSize: [38, 38], // standard size of the icon
+	});
 
 	return (
 		<div className="flex h-96 w-full">
@@ -37,6 +43,7 @@ const Map = () => {
 					<Marker
 						key={index}
 						position={marker.geocode}
+						icon={customIcon}
 					>
 						<Popup>{marker.popUp}</Popup>
 					</Marker>
