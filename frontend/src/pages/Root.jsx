@@ -55,17 +55,20 @@ const Root = () => {
 						<ul className="flex">{menuLink}</ul>
 						<FaBars
 							size="18px"
-							color="#fff"
-							className="MenuButton cursor-pointer flex md:hidden m-4"
+							className="MenuButton text-white cursor-pointer flex md:hidden m-4"
 						/>
 					</div>
 				</div>
 			</div>
+
 			<div id="content">
 				<Outlet />
 			</div>
+
 			<div className="flex items-center justify-center bg-darkblue border-t-[3px] border-gold">
-				<p className="py-4 text-white text-sm font-medium">Copyright &copy; SAVA Energy 2023</p>
+				<p className="py-4 text-white text-sm font-medium">
+					Copyright &copy; SAVA Energy 2021
+				</p>
 			</div>
 		</>
 	);

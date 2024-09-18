@@ -1,6 +1,7 @@
 import React from "react";
+import Title from "../components/Title";
 import Map from "../layouts/Map";
-import { IconContext } from "react-icons";
+import ContactInfo from "../components/ContactInfo";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -9,18 +10,8 @@ import { BsMailbox2Flag } from "react-icons/bs";
 const ContactUs = () => {
 	return (
 		<>
-			<div className="relative flex items-center w-[576px]">
-				<p className="text-xl text-white font-semibold absolute top-1/2 left-5 -translate-y-1/2">
-					Contact Us
-				</p>
-				<img
-					className="w-full"
-					src="images/webp/title.webp"
-					loading="eager"
-					alt=""
-				/>
-			</div>
 			<div className="flex flex-col p-20 gap-5 text-grey">
+				<Title title={`Contact Us`} />
 				<p>
 					<span className="font-semibold">SAVA ENERGY&nbsp;</span>
 					began operations on 2021. While the company is new to the
@@ -58,39 +49,27 @@ const ContactUs = () => {
 			<Map />
 
 			<div className="flex flex-col p-20 gap-5 text-grey">
-				<IconContext.Provider value={{ size: 20 }}>
-					<span className="flex items-center gap-3">
-						<IoMail title="Email" />
-						{/* <p className="font-bold">Email: &nbsp;</p> */}
-						<a
-							href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@savaenergyco.com"
-							target="_blank"
-						>
-							Info@savaenergyco.com
-						</a>
-					</span>
-					<span className="flex items-center gap-3">
-						{/* <p className="font-bold">Tel: &nbsp;</p> */}
-						<FaPhoneAlt title="Phone" />
-						<a href="tel:+98-937-4656-460">+98-937-4656-460</a>
-					</span>
-					<span className="flex items-center gap-3">
-						{/* <p className="font-bold">Address: &nbsp;</p> */}
-						<FaLocationDot title="Location" />
-						<a
-							href="https://www.google.com/maps/@34.997242,50.464352,307m/data=!3m1!1e3?hl=en&entry=ttu"
-							target="_blank"
-						>
-							NO. Ch43, Chemical Zone, Saveh Industried Town,
-							Saveh, Markazi Provience
-						</a>
-					</span>
-					<span className="flex items-center gap-3">
-						<BsMailbox2Flag title="Postal Code" />
-						{/* <p className="font-bold">Postal Code: &nbsp;</p> */}
-						<a type="Postal">3914171293</a>
-					</span>
-				</IconContext.Provider>
+				<ContactInfo
+					icon={<IoMail title="Email" />}
+					href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@savaenergyco.com"
+					target="_blank"
+					text="Info@savaenergyco.com"
+				/>
+				<ContactInfo
+					icon={<FaPhoneAlt title="Phone" />}
+					href="tel:+98-937-4656-460"
+					text="+98-937-4656-460"
+				/>
+				<ContactInfo
+					icon={<FaLocationDot title="Location" />}
+					href="https://www.google.com/maps/@34.997242,50.464352,307m/data=!3m1!1e3?hl=en&entry=ttu"
+					target="_blank"
+					text="NO. Ch43, Chemical Zone, Saveh Industried Town, Saveh, Markazi Provience"
+				/>
+				<ContactInfo
+					icon={<BsMailbox2Flag title="Postal Code" />}
+					text="3914171293"
+				/>
 			</div>
 		</>
 	);
