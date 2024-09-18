@@ -10,7 +10,7 @@ import { BsMailbox2Flag } from "react-icons/bs";
 const ContactUs = () => {
 	return (
 		<>
-			<div className="flex flex-col p-20 gap-5 text-grey">
+			<div className="flex flex-col xs:p-6 sm:p-10 md:p-20 gap-5 text-grey">
 				<Title title={`Contact Us`} />
 				<p>
 					<span className="font-semibold">SAVA ENERGY&nbsp;</span>
@@ -48,7 +48,7 @@ const ContactUs = () => {
 
 			<Map />
 
-			<div className="flex flex-col p-20 gap-5 text-grey">
+			<div className="flex flex-col xs:p-6 sm:p-10 md:p-20 gap-5 text-grey">
 				<ContactInfo
 					icon={<IoMail title="Email" />}
 					href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@savaenergyco.com"

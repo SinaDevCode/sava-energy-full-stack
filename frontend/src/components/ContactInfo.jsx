@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 const ContactInfo = ({ icon, href = null, target = null, text }) => {
 	return (
 		<IconContext.Provider value={{ size: 20 }}>
-			<span className="flex items-center gap-3">
+			<span className="flex items-start md:items-center gap-3">
 				{icon}
 				<a
 					href={href}
