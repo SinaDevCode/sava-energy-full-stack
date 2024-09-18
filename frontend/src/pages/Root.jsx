@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import Navbar from "../layouts/Navbar";
@@ -7,7 +7,13 @@ import Menu from "../layouts/Menu";
 import "../styles/media.css";
 
 const Root = () => {
-	const [menuIsOpen, setMenuIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = useState(false);
+
+	let location = useLocation();
+
+	useEffect(() => {
+		setIsOpen(false);
+	}, [location]);
 
 	return (
 		<>
@@ -30,22 +36,22 @@ const Root = () => {
 
 					<div className="Navbar max-h-[52px] flex justify-between items-center relative pl-2 lg:pl-4 pr-4 lg:pr-8 bg-darkblue min-w-[8rem] xs:min-w-[11rem] md:min-w-[44rem] lg:min-w-[54rem]">
 						<Navbar />
-						{menuIsOpen ? (
+						{isOpen ? (
 							<IoClose
 								size="18px"
 								className="MenuButton text-white cursor-pointer flex md:hidden m-4"
-								onClick={() => setMenuIsOpen(!menuIsOpen)}
+								onClick={() => setIsOpen(!isOpen)}
 							/>
 						) : (
 							<FaBars
 								size="18px"
 								className="MenuButton text-white cursor-pointer flex md:hidden m-4"
-								onClick={() => setMenuIsOpen(!menuIsOpen)}
+								onClick={() => setIsOpen(!isOpen)}
 							/>
 						)}
 					</div>
 				</div>
-				{menuIsOpen ? (
+				{isOpen ? (
 					<Menu left="left-0" />
 				) : (
 					<Menu left="-left-[350px]" />
