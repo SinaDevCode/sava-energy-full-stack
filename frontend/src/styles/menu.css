@@ -1,0 +1,18 @@
+.Menu a {
+    padding: 1rem 1.25rem;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.Menu a:hover,
+.Menu a.active {
+    color: rgb(219, 177, 59);
+}
+
+/* Remove these lines when all the menuLinks become active */
+.Menu a:nth-child(5) {
+    /* Disable Code Color => rgba(255, 255, 255, 0.5) */
+    color: rgba(255, 255, 255, 0.5) !important;
+    pointer-events: none;
+}

@@ -1,0 +1,20 @@
+/* Media Breakpoint */
+@media screen and (max-width: 900px) {
+    .Navbar ul a {
+        display: none;
+    }
+
+    .Navbar .MenuButton {
+        display: flex;
+    }
+
+    .Menu {
+        display: flex;
+    }
+}
+
+@media screen and (767px < width < 900px) {
+    .Navbar {
+        min-width: 32rem;
+    }
+}

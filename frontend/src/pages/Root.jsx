@@ -1,38 +1,14 @@
 import React, { useState } from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
-import "../styles/root.css";
-
-const menuLinks = {
-	titles: [
-		"Home",
-		"Services",
-		"Products",
-		"Lab Equipments",
-		"Projects",
-		"Contact Us",
-	],
-	paths: [
-		"/",
-		"/Services",
-		"/Products",
-		"/LabEquipments",
-		"/Projects",
-		"/ContactUs",
-	],
-};
-
-const menuLink = menuLinks.titles.map((title, index) => (
-	<NavLink
-		to={menuLinks.paths[index]}
-		key={title}
-		className="xs:hidden md:flex"
-	>
-		{title}
-	</NavLink>
-));
+import { IoClose } from "react-icons/io5";
+import Navbar from "../layouts/Navbar";
+import Menu from "../layouts/Menu";
+import "../styles/media.css";
 
 const Root = () => {
+	const [menuIsOpen, setMenuIsOpen] = useState(false);
+
 	return (
 		<>
 			<div className="sticky top-0 left-0 w-full max-h-28 flex justify-between items-center z-50 bg-light">
@@ -51,14 +27,29 @@ const Root = () => {
 					>
 						Login
 					</Link>
+
 					<div className="Navbar max-h-[52px] flex justify-between items-center relative pl-2 lg:pl-4 pr-4 lg:pr-8 bg-darkblue min-w-[8rem] xs:min-w-[11rem] md:min-w-[44rem] lg:min-w-[54rem]">
-						<ul className="flex">{menuLink}</ul>
-						<FaBars
-							size="18px"
-							className="MenuButton text-white cursor-pointer flex md:hidden m-4"
-						/>
+						<Navbar />
+						{menuIsOpen ? (
+							<IoClose
+								size="18px"
+								className="MenuButton text-white cursor-pointer flex md:hidden m-4"
+								onClick={() => setMenuIsOpen(!menuIsOpen)}
+							/>
+						) : (
+							<FaBars
+								size="18px"
+								className="MenuButton text-white cursor-pointer flex md:hidden m-4"
+								onClick={() => setMenuIsOpen(!menuIsOpen)}
+							/>
+						)}
 					</div>
 				</div>
+				{menuIsOpen ? (
+					<Menu left="left-0" />
+				) : (
+					<Menu left="-left-[350px]" />
+				)}
 			</div>
 
 			<div id="content">

@@ -1,0 +1,18 @@
+{
+    "titles": [
+        "Home",
+		"Services",
+		"Products",
+		"Lab Equipments",
+		"Projects",
+		"Contact Us"
+    ],
+    "paths": [
+        "/",
+		"/Services",
+		"/Products",
+		"/LabEquipments",
+		"/Projects",
+		"/ContactUs"
+    ]
+}
