@@ -15,7 +15,7 @@ const Map = () => {
 	];
 
 	const customIcon = new Icon({
-		iconUrl: "images/map/marker-icon.png",
+		iconUrl: "images/map/marker-icon.webp",
 		iconSize: [38, 38], // standard size of the icon
 	});
 
