@@ -29,12 +29,8 @@ const Map = () => {
 				touchZoom={false}
 				dragging={false}
 				zoom={13}
+				zoomControl={false}
 			>
-				attribution: '
-				<a href="http://www.openstreetmap.org/copyright">
-					OpenStreetMap
-				</a>
-				'
 				<TileLayer
 					attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 					url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
