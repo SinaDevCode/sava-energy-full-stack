@@ -1,6 +1,7 @@
 // Import Main Page Files Here
 import Root from "../pages/Root";
 import Home from "../pages/Home";
+import Products from "../pages/Products";
 import LabEquipments from "../pages/LabEquipments";
 import ContactUs from "../pages/ContactUs";
 
@@ -15,6 +16,10 @@ const routes = [
 			{
 				element: <Home />,
 				index: true,
+			},
+			{
+				path: "Products",
+				element: <Products />,
 			},
 			{
 				path: "LabEquipments",
