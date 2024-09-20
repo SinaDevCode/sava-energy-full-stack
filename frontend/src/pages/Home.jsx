@@ -1,12 +1,13 @@
 import React from "react";
 import About from "../layouts/About";
-
+import Business from "../layouts/Business";
 import Typewriter from "typewriter-effect";
 
 const Home = () => {
 	return (
 		<>
 			<About />
+			<Business />
 
 			<div className="relative w-full h-[75vh] flex justify-center items-center">
 				<Typewriter

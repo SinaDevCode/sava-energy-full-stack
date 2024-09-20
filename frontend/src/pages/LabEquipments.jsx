@@ -9,7 +9,7 @@ const equipmentItem = LabItems.map((LabItem) => (
 		<img
 			src={LabItem.imgUrl}
 			className="rounded-3xl w-full"
-			alt=""
+			alt={LabItem.name}
 			loading="lazy"
 		/>
 		<p className="text-center font-bold text-grey">{LabItem.name}</p>
