@@ -13,7 +13,7 @@ const Products = () => {
 					alt="Sava-Starch"
 				/>
 
-				<div className="flex flex-col gap-4 max-w-[620px] mx-auto text-justify">
+				<div className="flex flex-col gap-4 max-w-[620px] mx-auto text-justify text-grey">
 					<p>
 						Starch Lv & Starch HT is a high-quality, preserved
 						polysaccharide used to provide filtration control and
