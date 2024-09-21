@@ -6,10 +6,10 @@ const Products = () => {
 		<>
 			<TitleSample title="Starch" />
 
-			<div className="flex flex-col md:flex-row px-8 lg:pr-32 py-10 gap-10 lg:gap-20">
+			<div className="flex flex-col md:flex-row px-8 lg:pl-24 lg:pr-32 py-10 gap-10 lg:gap-20">
 				<img
 					className="w-full md:w-80"
-					src="/images/Sava-Starch.png"
+					src="\images\products\Sava-Starch-LV.webp"
 					alt="Sava-Starch"
 				/>
 

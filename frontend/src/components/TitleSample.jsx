@@ -8,7 +8,7 @@ const TitleSample = ({ title }) => {
 				src="/images/samples/title.webp"
 				alt="sample"
 			/>
-			<h2 className="z-10 text-2xl text-white font-bold px-6">{title}</h2>
+			<h2 className="z-10 text-xl text-white font-bold px-6">{title}</h2>
 		</div>
 	);
 };
