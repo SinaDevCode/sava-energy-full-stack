@@ -9,6 +9,8 @@ import Login from "../pages/Login";
 // Import 404 Error Handler Page
 import NotFound from "../pages/NotFound";
 
+import Panel from "../pages/panel/panel";
+
 const routes = [
 	{
 		path: "/",
@@ -18,7 +20,7 @@ const routes = [
 				element: <Home />,
 				index: true,
 			},
-			
+
 			{
 				path: "Products",
 				element: <Products />,
@@ -35,7 +37,11 @@ const routes = [
 	},
 	{
 		path: "/Login",
-		element: <Login />
+		element: <Login />,
+	},
+	{
+		path: "/panel",
+		element: <Panel />,
 	},
 	{
 		path: "*",
