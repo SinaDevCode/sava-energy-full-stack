@@ -4,7 +4,8 @@ import Home from "../pages/Home";
 import Products from "../pages/Products";
 import LabEquipments from "../pages/LabEquipments";
 import ContactUs from "../pages/ContactUs";
-
+// Import Login Page
+import Login from "../pages/Login";
 // Import 404 Error Handler Page
 import NotFound from "../pages/NotFound";
 
@@ -17,6 +18,7 @@ const routes = [
 				element: <Home />,
 				index: true,
 			},
+			
 			{
 				path: "Products",
 				element: <Products />,
@@ -30,6 +32,10 @@ const routes = [
 				element: <ContactUs />,
 			},
 		],
+	},
+	{
+		path: "/Login",
+		element: <Login />
 	},
 	{
 		path: "*",
