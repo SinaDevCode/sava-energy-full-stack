@@ -34,7 +34,7 @@ export default function Login() {
 			/>
 
 			<div className="w-3/5 h-full flex flex-col justify-center items-center md:border-l-2 gap-5 border-darkblue">
-				{redirect ? <Navigate to={`/${redirect.id}`} /> : null}
+				{redirect ? <Navigate to={`${redirect.pathname}`} /> : null}
 				{fail ? (
 					<Alert
 						message="Invalid username or password"

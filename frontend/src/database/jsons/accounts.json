@@ -1,25 +1,26 @@
 [{
-    "id": "mi",
+    "id": "Mi",
     "username": "mikish",
-    "password": "aphron2023"
+    "password": "aphron2023",
+    "pathname": "/Mi"
   },
   {
-    "id": "dana",
+    "id": "Dana",
     "username": "danaoilservices",
     "password": "paydargharb2024"
   },
   {
-    "id": "pdf",
+    "id": "Pdf",
     "username": "parsdrillingfluid",
     "password": "southpars2024"
   },
   {
-    "id": "vira",
+    "id": "Vira",
     "username": "vira_df",
     "password": "aphron2023"
   },
   {
-    "id": "sealand",
+    "id": "Sealand",
     "username": "bibihakimeh",
     "password": "drillingfluid2024"
   }

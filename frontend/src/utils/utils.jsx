@@ -8,7 +8,7 @@ const auth = (userValue) => {
 	);
 
 	if (result) {
-		sessionStorage.setItem("userID", result.id);
+		sessionStorage.setItem("pathname", result.pathname);
 	}
 
 	// it return object or undefined

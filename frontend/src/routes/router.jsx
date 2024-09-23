@@ -6,6 +6,9 @@ import LabEquipments from "../pages/LabEquipments";
 import ContactUs from "../pages/ContactUs";
 // Import Login Page
 import Login from "../pages/Login";
+// Import Mi Pages Here
+import MiDashboard from "../pages/dashboard/mi/MiDashboard";
+
 // Import 404 Error Handler Page
 import NotFound from "../pages/NotFound";
 
@@ -36,6 +39,10 @@ const routes = [
 	{
 		path: "/Login",
 		element: <Login />,
+	},
+	{
+		path: "/Mi",
+		element: <MiDashboard />,
 	},
 	{
 		path: "*",
